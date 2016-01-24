@@ -1430,6 +1430,15 @@ public final class CMSettings {
                 sBooleanValidator;
 
         /**
+         * @hide
+         */
+        public static final String SHOW_NEXT_ALARM = "show_next_alarm";
+
+        /** @hide */
+        public static final Validator SHOW_NEXT_ALARM_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether to show the IME switcher in the status bar
          * 0 = 0ff, 1 = on
          */
@@ -1783,6 +1792,7 @@ public final class CMSettings {
                 CMSettings.System.BLUETOOTH_ACCEPT_ALL_FILES,
                 CMSettings.System.LOCKSCREEN_PIN_SCRAMBLE_LAYOUT,
                 CMSettings.System.SHOW_ALARM_ICON,
+                CMSettings.System.SHOW_NEXT_ALARM,
                 CMSettings.System.STATUS_BAR_IME_SWITCHER,
                 CMSettings.System.QS_SHOW_BRIGHTNESS_SLIDER,
                 CMSettings.System.STATUS_BAR_BRIGHTNESS_CONTROL,
@@ -1920,6 +1930,7 @@ public final class CMSettings {
             VALIDATORS.put(LOCKSCREEN_PIN_SCRAMBLE_LAYOUT,
                     LOCKSCREEN_PIN_SCRAMBLE_LAYOUT_VALIDATOR);
             VALIDATORS.put(SHOW_ALARM_ICON, SHOW_ALARM_ICON_VALIDATOR);
+            VALIDATORS.put(SHOW_NEXT_ALARM, SHOW_NEXT_ALARM_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_IME_SWITCHER, STATUS_BAR_IME_SWITCHER_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_QUICK_QS_PULLDOWN,
                     STATUS_BAR_QUICK_QS_PULLDOWN_VALIDATOR);
