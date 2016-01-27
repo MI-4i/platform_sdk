@@ -1439,6 +1439,24 @@ public final class CMSettings {
                 sBooleanValidator;
 
         /**
+         * @hide
+         */
+        public static final String SAFE_HEADSET_VOLUME = "safe_headset_volume";
+
+        /** @hide */
+        public static final Validator SAFE_HEADSET_VOLUME_VALIDATOR =
+                sBooleanValidator;
+
+        /**
+         * @hide
+         */
+        public static final String STREAM_VOLUME_STEPS_CHANGED = "stream_volume_steps_changed";
+
+        /** @hide */
+        public static final Validator STREAM_VOLUME_STEPS_CHANGED_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether to show the IME switcher in the status bar
          * 0 = 0ff, 1 = on
          */
@@ -1823,6 +1841,8 @@ public final class CMSettings {
                 CMSettings.System.LOCKSCREEN_PIN_SCRAMBLE_LAYOUT,
                 CMSettings.System.SHOW_ALARM_ICON,
                 CMSettings.System.SHOW_NEXT_ALARM,
+                CMSettings.System.SAFE_HEADSET_VOLUME,
+                CMSettings.System.STREAM_VOLUME_STEPS_CHANGED,
                 CMSettings.System.STATUS_BAR_IME_SWITCHER,
                 CMSettings.System.QS_SHOW_BRIGHTNESS_SLIDER,
                 CMSettings.System.STATUS_BAR_BRIGHTNESS_CONTROL,
@@ -1961,6 +1981,8 @@ public final class CMSettings {
                     LOCKSCREEN_PIN_SCRAMBLE_LAYOUT_VALIDATOR);
             VALIDATORS.put(SHOW_ALARM_ICON, SHOW_ALARM_ICON_VALIDATOR);
             VALIDATORS.put(SHOW_NEXT_ALARM, SHOW_NEXT_ALARM_VALIDATOR);
+            VALIDATORS.put(SAFE_HEADSET_VOLUME, SAFE_HEADSET_VOLUME_VALIDATOR);
+            VALIDATORS.put(STREAM_VOLUME_STEPS_CHANGED, STREAM_VOLUME_STEPS_CHANGED_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_IME_SWITCHER, STATUS_BAR_IME_SWITCHER_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_QUICK_QS_PULLDOWN,
                     STATUS_BAR_QUICK_QS_PULLDOWN_VALIDATOR);
