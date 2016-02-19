@@ -1785,6 +1785,16 @@ public final class CMSettings {
                 sBooleanValidator;
 
         /**
+         * Whether or not to vibrate when a touchscreen gesture is detected
+         */
+        public static final String TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK =
+                "touchscreen_gesture_haptic_feedback";
+
+        /** @hide */
+        public static final Validator TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * I can haz more bukkits
          * @hide
          */
@@ -1890,6 +1900,7 @@ public final class CMSettings {
                 CMSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT,
                 CMSettings.System.VOLUME_KEYS_CONTROL_RING_STREAM,
                 CMSettings.System.NAVIGATION_BAR_MENU_ARROW_KEYS,
+                CMSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK,
         };
 
         /**
@@ -2040,6 +2051,8 @@ public final class CMSettings {
             VALIDATORS.put(HEADS_UP_WHITELIST_VALUES, HEADS_UP_WHITELIST_VALUES_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_LIGHT_COLOR_AUTO,
                     NOTIFICATION_LIGHT_COLOR_AUTO_VALIDATOR);
+            VALIDATORS.put(TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK,
+                    TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK_VALIDATOR);
             VALIDATORS.put(__MAGICAL_TEST_PASSING_ENABLER,
                     __MAGICAL_TEST_PASSING_ENABLER_VALIDATOR);
         };
