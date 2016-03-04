@@ -285,6 +285,9 @@ public class CMDatabaseHelper extends SQLiteOpenHelper{
         loadBooleanSetting(db, CMTableNames.TABLE_SYSTEM, CMSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION,
                 R.bool.def_swap_volume_keys_on_rotation);
 
+        loadBooleanSetting(db, CMTableNames.TABLE_SYSTEM, CMSettings.System.CONNECTED_LINE_IDENTIFICATION,
+                R.bool.def_connected_line_identification);
+
         if (mContext.getResources().getBoolean(R.bool.def_notification_pulse_custom_enable)) {
             loadStringSetting(db, CMTableNames.TABLE_SYSTEM, CMSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES,
                     R.string.def_notification_pulse_custom_value);
